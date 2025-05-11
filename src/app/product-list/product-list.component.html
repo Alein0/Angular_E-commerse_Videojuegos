@@ -1,25 +1,32 @@
+<input
+  type="text"
+  placeholder="Buscar producto"
+  [(ngModel)]="searchTerm"
+  (input)="searchProducts()"
+  class="form-control mb-4"
+/>
+
 <div class="container mt-4">
 
     <h2>Productos Disponibles</h2>
   
     <div class="row">
+      <!-- Si el usuario ya buscó y no hay resultados -->
+      <div
+        *ngIf="searchTerm && filteredProducts.length === 0"
+        class="col-12 text-center mt-4"
+      >
+        <p>No se encontraron productos.</p>
+      </div>
   
-      <div *ngFor="let product of products" class="col-md-4 mb-3">
-  
+      <div *ngFor="let product of filteredProducts" class="col-md-4 mb-3">
         <div class="card">
-  
           <img [src]="product.imageUrl" class="card-img-top" alt="{{ product.name }}">
-  
-          <div class="card-body">
-  
-            <h5 class="card-title">{{ product.name }}</h5>
-  
-            <p class="card-text">{{ product.price  }}</p>
-
-            <p class="card-text">{{ product.description }}</p>
-  
-            <button class="btn btn-primary" (click)="addToCart(product)">Añadir al Carrito</button>
-  
+        <div class="card-body">
+          <h5 class="card-title">{{ product.name }}</h5>
+          <p class="card-text">{{ product.price }}</p>
+          <p class="card-text">{{ product.description }}</p>
+    
           </div>
   
         </div>
