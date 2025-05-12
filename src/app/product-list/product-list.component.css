@@ -19,11 +19,7 @@
   height: auto;
 }
 
-/* Título del producto */
-.card-title {
-  font-size: 30px;
-  color: gold;
-}
+
 
 /* Texto de descripción */
 .card-text {
