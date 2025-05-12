@@ -1,3 +1,30 @@
 h1{
     font-size: 200px;
 }
+
+.card {
+  background-color: #1a1a1a;
+  transition: transform 0.2s ease-in-out;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0);
+}
+
+.titulo-contacto {
+  color: gold; 
+  font-size: 4rem; 
+  font-weight: bold;
+}
+
+.descripcion-contacto {
+  margin-top: 50px; 
+  color: #ccc;
+  font-size: 1.5rem;
+}
+
+.cards-contacto {
+  margin-top: 70px; 
+}
+
+
