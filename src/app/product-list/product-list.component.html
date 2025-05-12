@@ -13,6 +13,7 @@
     <div *ngIf="filteredProducts.length > 0">
       <h2>Nuestro catálogo</h2>
 
+    <!-- Lista de videojuegos -->
     <div class="row">
       <div *ngFor="let product of filteredProducts" class="col-md-4 mb-3">
         <div class="card">
@@ -27,7 +28,7 @@
     </div>
   </div>
 
-  <!-- Si el usuario ya buscó y no hay resultados -->
+  <!-- Si se buscó y no hay resultados -->
       <div *ngIf="searchTerm && filteredProducts.length === 0" class="col-12 text-center mt-4">
         <p>No se encontraron resultados.</p>
       </div>
