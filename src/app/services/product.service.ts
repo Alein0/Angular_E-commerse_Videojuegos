@@ -25,6 +25,7 @@ interface Product
 export class ProductService {
 
   private products = new BehaviorSubject<Product[]>([
+    //Lista de las cards con la informacion e imagen de cada videojuego 
 
   { id: 1, name: 'The Last of Us', price: 'Precio 200.000 COP' , category: 'Acción', cantidad: 3,  description: 'En una civilización asolada, plagada de infectados y crueles supervivientes, Joel, nuestro exhausto protagonista, es contratado para sacar a escondidas a una chica de 14 años, Ellie, de una zona militar en cuarentena. Pero lo que comienza siendo una simple tarea, pronto se transforma en un brutal viaje por el país.', imageUrl: 'telasofas.png' },
 
