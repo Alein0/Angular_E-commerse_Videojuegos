@@ -1,25 +1,21 @@
-.navbar {
 
-  padding: 1rem 2rem;
-
+.custom-navbar {
+  background-color: black;
 }
 
- 
 
-.navbar-brand {
-
+.custom-navbar .navbar-brand {
+  color: gold;
   font-weight: bold;
-
-  color: #0056b3;
-
+  font-size: 1.5rem;
 }
 
- 
-
-.btn-outline-primary {
-
-  margin-right: 1rem;
-
+.custom-navbar .btn-outline-light {
+  color: white;
+  border-color: white;
 }
 
- 
+.custom-navbar .btn-outline-light:hover {
+  background-color: white;
+  color: black;
+}
