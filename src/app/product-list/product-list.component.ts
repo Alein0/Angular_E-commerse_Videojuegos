@@ -49,7 +49,7 @@ export class ProductListComponent implements OnInit {
     const term = this.searchTerm.trim().toLowerCase();
 
     if (term === '') {
-      this.filteredProducts = this.products; // Oculta lista si el campo está vacío
+      this.filteredProducts = this.products; // Muestra la lista
       return;
     }
 
