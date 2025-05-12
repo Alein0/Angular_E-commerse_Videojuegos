@@ -1,29 +1,31 @@
 .card {
+  background-color: #1a1a1a;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 8px;
+  color: gold; 
+  transition: transform 0.2s ease;
+}
 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  
-    border: none;
-  
-    border-radius: 8px;
-  
-  }
-  
-  
-  
-  .card img {
-  
-    border-top-left-radius: 8px;
-  
-    border-top-right-radius: 8px;
-  
-  }
-  
-   
-  
-  .card-title {
-  
-    font-size: 30px;
-  
-    color: #333;
-  
-  }
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+/* Título del producto */
+.card-title {
+  font-size: 30px;
+  color: gold;
+}
+
+/* Texto de descripción */
+.card-text {
+  color: #dddddd;
+}
