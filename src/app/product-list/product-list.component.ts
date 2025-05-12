@@ -41,7 +41,7 @@ export class ProductListComponent implements OnInit {
 
     this.productService.getProducts().subscribe((products) => {
       this.products = products;
-      this.filteredProducts = products;
+      this.filteredProducts = products;  // Muestra la lista de videojuegos
     });
   }
 
@@ -49,7 +49,7 @@ export class ProductListComponent implements OnInit {
     const term = this.searchTerm.trim().toLowerCase();
 
     if (term === '') {
-      this.filteredProducts = this.products; // Muestra la lista
+      this.filteredProducts = this.products; // sigue mostrando la lista de videojuegos aún estando la barra de busqueda vacia
       return;
     }
 

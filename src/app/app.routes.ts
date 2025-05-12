@@ -6,6 +6,6 @@ import { PaginaPrincipalComponent } from './pagina-principal/pagina-principal.co
 
 export const routes: Routes = [
     { path: '', component:PaginaPrincipalComponent }, // Página principal
-    { path: 'contact', component: ContactComponent },
-    { path: 'buscar', component: ProductListComponent },
+    { path: 'contact', component: ContactComponent }, // Nosotros
+    { path: 'buscar', component: ProductListComponent }, // buscador
 ];
